@@ -8,6 +8,9 @@ void setup {
   frameRate(60);
 
   rings = new Ring[numRings];
+  for (int i = 0; i < rings.length; i++) {
+    rings[i] = new Ring();
+  }
 }
 
 void draw {
